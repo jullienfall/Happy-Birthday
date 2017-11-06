@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    background-color: #f25454;
+}
+.happy {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.happy h1 {
+    color: azure;
+    font-size: 4em;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.happy i {
+    animation-name: gift-pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes gift-pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+}
